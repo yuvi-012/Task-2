@@ -1,0 +1,36 @@
+task 2
+Boundary value analysis
+Boundary value analysis technique is used to test the boundaries between equivalence partition one test case for each boundary value.this helps to ensure the software by identifying issues related to boundary conditions.
+boundary value test case
+invalid test case (min value-1) (7)
+valid test case(minimum,maximum,-maximum) (8,10,11,12,18)
+invalid test case (maximum+1)(20)
+Decision table testing
+This technique is used to test system behavior for different input combination.
+ex:correct username and password,wrong username and password.
+condition - test 1 - test2 - test3 - test4
+username - - - F - - - T - - - - F - - - -T
+password - - -T - - - F - - - - -T - - - -T
+output - - - - E - - -E - - - - -E - - - -S
+F-false
+T-true
+E-error
+S-sucessfully login
+Use case testing
+This type of testing are tested or interaction like human to system or atm machine like billing counter these the way the use case testing where tested .and it is also tested in positive and negative way.
+Scenario - - - - - - - step - - - - - - - description
+H:human - - - - - - 1 - - - -H:entering user name and password
+S:system - - - - - - - 2 - - - -S:validate password
+- - - - - - - - - - - 3 - - - H:account sucessfully loged in
+Extension - - - - - -2a - - -password not correct S:(retry again)
+- - - - - - - - - - -2b - - still the password is not correct S:(id was locked)
+LCSAJ
+The lcsaj is called Linear code sequence and jump it is white box testing technique for code coverage it begin at the start of the programe and end at the end of the programe.
+it is 100% statement coverage and design and 100% decision coverage.
+def is_even(num):
+if num % 2 == 0:
+return True
+else:
+return False
+print(is_even(4))
+print(is_even(5))
